@@ -55,5 +55,18 @@ if (reportForm) {
 
 const grid = document.querySelector('#problems-grid');
 if (grid) fetch('/api/reports').then(r => r.json()).then(({ reports }) => {
-  grid.innerHTML = reports.map(r => `<article class="problem-card"><div class="problem-icon">!</div><div><span class="tag">${esc(r.type)}</span><h2>${esc(r.type)}</h2><p><b>Location:</b> ${esc(r.location)}</p><p>${esc(r.description)}</p><div class="report-meta"><span class="priority ${esc(r.priority).toLowerCase()}">${esc(r.priority)}</span><span>${esc(r.status)}</span></div></div></article>`).join('');
+  grid.innerHTML = reports.map(r => 
+`<article class="problem-card">
+    <div class="problem-icon">!</div>
+    <div>
+        <span class="tag">${esc(r.type)}</span>
+          <h2>${esc(r.type)}</h2>
+          <p><b>Location:</b> ${esc(r.location)}</p>
+          <p>${esc(r.description)}</p>
+      <div class="report-meta">
+          <span class="priority ${esc(r.priority).toLowerCase()}">${esc(r.priority)}</span>
+          <span>${esc(r.status)}</span>
+      </div>
+    </div>
+  </article>`).join('');
 });
