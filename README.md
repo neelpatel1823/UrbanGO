@@ -1,5 +1,5 @@
 # UrbanGO
-## Install of not
+## Install if not
 
 
 - **Node.js**: `v20.x` or higher 
