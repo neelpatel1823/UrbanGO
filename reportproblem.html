@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+
+    <title>Report Problem | UrbanPulse</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a class="brand" href="index.html">
+        Urban<span>Pulse</span>
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="reportproblem.html">Report Problem</a>
+        <a href="problems.html">Problems</a>
+      </nav>
+    </header>
+
+    <main class="page wrap">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">New community report</p>
+
+          <h1>Report a problem</h1>
+
+          <p class="subtitle">
+            Add clear details so the issue can be understood.
+          </p>
+        </div>
+      </div>
+
+      <form id="report-form" class="form-card">
+        <p
+          id="form-message"
+          class="notice"
+          hidden
+        ></p>
+
+        <div class="form-group">
+          <label for="problem-type">Problem type</label>
+
+          <select
+            class="form-control"
+            id="problem-type"
+            name="type"
+            required
+          >
+            <option value="">Select a category</option>
+            <option>Pothole</option>
+            <option>Garbage</option>
+            <option>Drainage</option>
+            <option>Broken Streetlight</option>
+            <option>Road Damage</option>
+            <option>Water Leakage</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div
+          id="other-type-wrap"
+          class="form-group"
+          hidden
+        >
+          <label for="other-type">Your problem type</label>
+
+          <input
+            class="form-control"
+            id="other-type"
+            name="otherType"
+            minlength="3"
+            placeholder="At least 3 characters"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+
+          <input
+            class="form-control"
+            id="location"
+            name="location"
+            placeholder="Street, locality, or landmark"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label>Priority</label>
+
+          <div class="radio-options">
+            <label>
+              <input
+                type="radio"
+                name="priority"
+                value="Low"
+                required
+              >
+              Low
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="priority"
+                value="Medium"
+              >
+              Medium
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="priority"
+                value="High"
+              >
+              High
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+
+          <textarea
+            class="form-control"
+            id="description"
+            name="description"
+            required
+            placeholder="Describe the issue"
+          ></textarea>
+        </div>
+
+        <button
+          class="btn btn-primary"
+          type="submit"
+        >
+          Submit Report
+        </button>
+      </form>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+
+    <title>Problems | UrbanPulse</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a class="brand" href="index.html">
+        Urban<span>Pulse</span>
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a data-report-link href="login.html">Report Problem</a>
+        <a href="problems.html">Problems</a>
+      </nav>
+    </header>
+
+    <main class="page wrap">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">Community reports</p>
+
+          <h1>Problems</h1>
+
+          <p class="subtitle">
+            Current civic issues submitted by community users.
+          </p>
+        </div>
+
+        <a
+          data-report-link
+          class="btn btn-primary"
+          href="login.html"
+        >
+          Report a Problem
+        </a>
+      </div>
+
+      <section
+        id="problems-grid"
+        class="problems-grid"
+        aria-live="polite"
+      ></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

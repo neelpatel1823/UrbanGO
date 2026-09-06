@@ -1,0 +1,10 @@
+{
+  "users": [
+    { "id": 1, "name": "Demo User", "email": "user@urbanpulse.local", "password": "User@123", "role": "user" },
+    { "id": 2, "name": "System Admin", "email": "admin@urbanpulse.local", "password": "Admin@123", "role": "admin" }
+  ],
+  "reports": [
+    { "id": "CIV-001", "type": "Pothole", "location": "Sion Road", "priority": "High", "description": "Large pothole affecting two-wheelers.", "status": "Submitted", "reporter": "Demo User", "createdAt": "2026-08-22" },
+    { "id": "CIV-002", "type": "Garbage", "location": "Matunga", "priority": "Medium", "description": "Garbage collection point is overflowing.", "status": "Submitted", "reporter": "Demo User", "createdAt": "2026-08-22" }
+  ]
+}
